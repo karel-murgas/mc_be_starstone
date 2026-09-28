@@ -129,5 +129,5 @@ negative chunks, absent visual border arms, guarded support reads, restart,
 dense paged storage, page/head failure recovery, corruption isolation, source
 patches, and malformed/cross-chunk rejection. Separate segment-graph acceptance
 tests cover A–B–C connectivity from saved metadata and exact reciprocal ports.
-These are offline checks. Task 7.6 still requires a real session with middle
+These are offline checks. TEST-WORLD.md gate 7.6 still requires a real session with middle
 chunk B confirmed unloaded while A and C remain observable.

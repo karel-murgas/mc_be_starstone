@@ -1,4 +1,4 @@
-﻿# Verification coverage
+# Verification coverage
 
 The shared verifier is `.claude/skills/bedrock-lookup/scripts/verify_addon.py`.
 It remains generic: no Starstone block IDs or gameplay rules are embedded in it.
@@ -6,7 +6,7 @@ The original positional BP/RP invocation still works. Node.js is now required
 when the BP has JavaScript: scripts are parsed as modules without executing them.
 A missing Node executable is an error rather than a silently skipped check.
 
-Run all relevant Starstone checks from `C:\mcmods`:
+From the workspace root, `.\mods verify starstone` runs:
 
 ```powershell
 python -B .claude/skills/bedrock-lookup/scripts/verify_addon.py mods/starstone/starstone_bp mods/starstone/starstone_rp --regression-tests mods/starstone/tests/run.mjs
@@ -68,16 +68,7 @@ The general verifier's negative fixtures are permanent at
 python -B tools/verification/test_verify_addon.py
 ```
 
-Result after installation: 32 new verifier regression assertions passed; earlier
-verifier regression checks passed; 15/15 Starstone suites passed; full shared
-verification reported 0 errors and 0 warnings.
-
-Milestone 5 adds persistence and recovery suites: 17/17 Starstone suites pass.
-The same shared verification command reports 0 errors and 0 warnings.
-
-Later milestone coverage includes the suites above. The generic verifier now
-has 37 positive/negative regression assertions. Final suite totals are recorded
-in IMPLEMENTATION-STATUS.md. `node mods/starstone/tests/mutation-check.mjs`
+`node mods/starstone/tests/mutation-check.mjs`
 deliberately permits a wrong mounting-plane edge in an isolated temporary copy;
 the graph acceptance test rejects it. The original fixture used nonreciprocal
 local ports and did not catch that mutation; it now uses an explicit reciprocal

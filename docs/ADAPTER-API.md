@@ -1,6 +1,6 @@
 # Redstone adapter API and behavior
 
-The selected input mode is polling (`mods/starstone/tools/compatibility.json`). The
+The selected input mode is polling. The
 pack declares block format 1.21.120 and `@minecraft/server` 2.8.0. A native
 `minecraft:redstone_consumer` is not used on this baseline.
 

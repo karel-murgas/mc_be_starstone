@@ -73,7 +73,7 @@ function main() {
         return;
     }
 
-    let outPath = path.join(__dirname, "generated", "cable-permutations.json");
+    let outPath = path.join(__dirname, "..", "generated", "cable-permutations.json");
     const outIdx = args.indexOf("--out");
     if (outIdx !== -1) {
         outPath = path.resolve(args[outIdx + 1]);

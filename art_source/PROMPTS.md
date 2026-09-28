@@ -70,17 +70,6 @@ Avoid: full-block adapter imagery, repeater-like devices, joined lines in the br
 Edit the first referenced 4-by-2 transparent pixel-art atlas. Change only the second cell in the top row: replace the thin flat generator panel with a full cubic Starstone generator block. Match the compact generator cube in the fourth cell of the top row of the second referenced atlas: deep navy/charcoal casing, cool gunmetal corners, neon-blue-to-cyan crystal core on the top and glowing cyan side ports. Preserve the exact 4-by-2 grid, transparent background, cell boundaries, scale, crisp Minecraft pixel-art style, palette, and all other seven cells exactly. No text, labels, borders, purple, magenta, orange, bronze, or warm copper.
 ```
 
-## Cable shape reference
-
-```text
-Create a new transparent Minecraft pixel-art reference sheet in the exact same Starstone neon-blue/cyan style as the references. Use a clean 3-column by 2-row grid with six separate thin surface-mounted cable shapes, viewed at the same consistent isometric angle and scale. Order left-to-right, top-to-bottom: isolated center node with no arms; one-arm endpoint; two-arm straight cable; two-arm 90-degree L/elbow cable; three-arm T-junction cable; four-arm joined intersection. Every shape has the same dark charcoal plate/casing, square center contact, and glowing blue-to-cyan conductor. The L must be unmistakably L-shaped; the T must be unmistakably T-shaped; the final intersection is electrically joined at its center and must not resemble the raised nonjoining bridge. Generous transparent padding, no text, letters, numbers, labels, arrows, borders, background scene, bridge, conduit, purple, magenta, orange, bronze, or warm copper. Crisp hard pixel edges and strong silhouettes suitable for 32-by-32 icons.
-```
-
-The first generated shape sheet rendered the L cell as a second straight. It was corrected with this edit prompt:
-
-```text
-Edit only the bottom-left cell of this 3-column by 2-row Starstone cable reference sheet. It currently reads as another straight cable. Replace it with an unmistakable 90-degree L/elbow: exactly two adjacent glowing conductor arms meeting and electrically joining at the square center, one arm toward the upper-right edge and one arm toward the lower-right edge of the isometric diamond. It must have no arm toward the upper-left or lower-left. Preserve the other five cells exactly, including endpoint, straight, T, and four-way joined intersection; preserve layout, scale, dark charcoal casing, neon blue-to-cyan palette, crisp pixel art, and background. No text or labels.
-```
 
 ## Transparent wire and rotation-neutral adapters
 

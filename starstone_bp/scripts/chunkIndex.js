@@ -1,5 +1,5 @@
 // Persistent chunk-local electrical components. No world data is read on import.
-// See tools/starstone/docs/CHUNK-SEGMENTS.md for the recoverable page protocol.
+// See docs/CHUNK-SEGMENTS.md in the mod repo for the recoverable page protocol.
 import { world } from "@minecraft/server";
 import { descriptorForBlock } from "./electricalBlocks.js";
 import { worldDirOfPort } from "./portDirections.js";
