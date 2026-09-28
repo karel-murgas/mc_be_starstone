@@ -1,0 +1,14 @@
+{
+  "format_version": "1.20.10",
+  "minecraft:recipe_shaped": {
+    "description": { "identifier": "starstone:bridge_recipe" },
+    "tags": ["crafting_table"],
+    "unlock": [{ "item": "starstone:cable_item" }],
+    "pattern": [" C ", "CIC", " C "],
+    "key": {
+      "C": { "item": "starstone:cable_item" },
+      "I": { "item": "minecraft:iron_ingot" }
+    },
+    "result": { "item": "starstone:bridge", "count": 4 }
+  }
+}

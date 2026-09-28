@@ -1,0 +1,835 @@
+{
+  "format_version": "1.21.0",
+  "minecraft:geometry": [
+    {
+      "description": {
+        "identifier": "geometry.starstone_adapter",
+        "texture_width": 32,
+        "texture_height": 32,
+        "visible_bounds_width": 2,
+        "visible_bounds_height": 2,
+        "visible_bounds_offset": [
+          0,
+          0.5,
+          0
+        ]
+      },
+      "bones": [
+        {
+          "name": "center",
+          "pivot": [
+            0,
+            0,
+            0
+          ],
+          "cubes": [
+            {
+              "origin": [
+                -3,
+                0,
+                -3
+              ],
+              "size": [
+                6,
+                0.32,
+                6
+              ],
+              "uv": {
+                "up": {
+                  "uv": [
+                    10,
+                    10
+                  ],
+                  "uv_size": [
+                    12,
+                    12
+                  ],
+                  "material_instance": "center"
+                },
+                "down": {
+                  "uv": [
+                    10,
+                    10
+                  ],
+                  "uv_size": [
+                    12,
+                    12
+                  ],
+                  "material_instance": "center"
+                },
+                "north": {
+                  "uv": [
+                    10,
+                    10
+                  ],
+                  "uv_size": [
+                    5,
+                    2
+                  ],
+                  "material_instance": "center"
+                },
+                "east": {
+                  "uv": [
+                    10,
+                    10
+                  ],
+                  "uv_size": [
+                    5,
+                    2
+                  ],
+                  "material_instance": "center"
+                },
+                "south": {
+                  "uv": [
+                    10,
+                    10
+                  ],
+                  "uv_size": [
+                    5,
+                    2
+                  ],
+                  "material_instance": "center"
+                },
+                "west": {
+                  "uv": [
+                    10,
+                    10
+                  ],
+                  "uv_size": [
+                    5,
+                    2
+                  ],
+                  "material_instance": "center"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "name": "blue_n",
+          "pivot": [
+            0,
+            0,
+            0
+          ],
+          "cubes": [
+            {
+              "origin": [
+                -1,
+                0.02,
+                -8.14
+              ],
+              "size": [
+                2,
+                0.12,
+                5.14
+              ],
+              "uv": {
+                "up": {
+                  "uv": [
+                    19,
+                    14
+                  ],
+                  "uv_size": [
+                    5,
+                    4
+                  ],
+                  "uv_rotation": 90,
+                  "material_instance": "blue"
+                },
+                "down": {
+                  "uv": [
+                    19,
+                    14
+                  ],
+                  "uv_size": [
+                    5,
+                    4
+                  ],
+                  "uv_rotation": 90,
+                  "material_instance": "blue"
+                },
+                "north": {
+                  "uv": [
+                    19,
+                    14
+                  ],
+                  "uv_size": [
+                    5,
+                    2
+                  ],
+                  "material_instance": "blue"
+                },
+                "east": {
+                  "uv": [
+                    19,
+                    14
+                  ],
+                  "uv_size": [
+                    5,
+                    2
+                  ],
+                  "material_instance": "blue"
+                },
+                "south": {
+                  "uv": [
+                    19,
+                    14
+                  ],
+                  "uv_size": [
+                    5,
+                    2
+                  ],
+                  "material_instance": "blue"
+                },
+                "west": {
+                  "uv": [
+                    19,
+                    14
+                  ],
+                  "uv_size": [
+                    5,
+                    2
+                  ],
+                  "material_instance": "blue"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "name": "blue_e",
+          "pivot": [
+            0,
+            0,
+            0
+          ],
+          "cubes": [
+            {
+              "origin": [
+                -8.14,
+                0.02,
+                -1
+              ],
+              "size": [
+                5.14,
+                0.12,
+                2
+              ],
+              "uv": {
+                "up": {
+                  "uv": [
+                    19,
+                    14
+                  ],
+                  "uv_size": [
+                    5,
+                    4
+                  ],
+                  "material_instance": "blue"
+                },
+                "down": {
+                  "uv": [
+                    19,
+                    14
+                  ],
+                  "uv_size": [
+                    5,
+                    4
+                  ],
+                  "material_instance": "blue"
+                },
+                "north": {
+                  "uv": [
+                    19,
+                    14
+                  ],
+                  "uv_size": [
+                    5,
+                    2
+                  ],
+                  "material_instance": "blue"
+                },
+                "east": {
+                  "uv": [
+                    19,
+                    14
+                  ],
+                  "uv_size": [
+                    5,
+                    2
+                  ],
+                  "material_instance": "blue"
+                },
+                "south": {
+                  "uv": [
+                    19,
+                    14
+                  ],
+                  "uv_size": [
+                    5,
+                    2
+                  ],
+                  "material_instance": "blue"
+                },
+                "west": {
+                  "uv": [
+                    19,
+                    14
+                  ],
+                  "uv_size": [
+                    5,
+                    2
+                  ],
+                  "material_instance": "blue"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "name": "blue_s",
+          "pivot": [
+            0,
+            0,
+            0
+          ],
+          "cubes": [
+            {
+              "origin": [
+                -1,
+                0.02,
+                3
+              ],
+              "size": [
+                2,
+                0.12,
+                5.14
+              ],
+              "uv": {
+                "up": {
+                  "uv": [
+                    19,
+                    14
+                  ],
+                  "uv_size": [
+                    5,
+                    4
+                  ],
+                  "uv_rotation": 90,
+                  "material_instance": "blue"
+                },
+                "down": {
+                  "uv": [
+                    19,
+                    14
+                  ],
+                  "uv_size": [
+                    5,
+                    4
+                  ],
+                  "uv_rotation": 90,
+                  "material_instance": "blue"
+                },
+                "north": {
+                  "uv": [
+                    19,
+                    14
+                  ],
+                  "uv_size": [
+                    5,
+                    2
+                  ],
+                  "material_instance": "blue"
+                },
+                "east": {
+                  "uv": [
+                    19,
+                    14
+                  ],
+                  "uv_size": [
+                    5,
+                    2
+                  ],
+                  "material_instance": "blue"
+                },
+                "south": {
+                  "uv": [
+                    19,
+                    14
+                  ],
+                  "uv_size": [
+                    5,
+                    2
+                  ],
+                  "material_instance": "blue"
+                },
+                "west": {
+                  "uv": [
+                    19,
+                    14
+                  ],
+                  "uv_size": [
+                    5,
+                    2
+                  ],
+                  "material_instance": "blue"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "name": "blue_w",
+          "pivot": [
+            0,
+            0,
+            0
+          ],
+          "cubes": [
+            {
+              "origin": [
+                3,
+                0.02,
+                -1
+              ],
+              "size": [
+                5.14,
+                0.12,
+                2
+              ],
+              "uv": {
+                "up": {
+                  "uv": [
+                    19,
+                    14
+                  ],
+                  "uv_size": [
+                    5,
+                    4
+                  ],
+                  "material_instance": "blue"
+                },
+                "down": {
+                  "uv": [
+                    19,
+                    14
+                  ],
+                  "uv_size": [
+                    5,
+                    4
+                  ],
+                  "material_instance": "blue"
+                },
+                "north": {
+                  "uv": [
+                    19,
+                    14
+                  ],
+                  "uv_size": [
+                    5,
+                    2
+                  ],
+                  "material_instance": "blue"
+                },
+                "east": {
+                  "uv": [
+                    19,
+                    14
+                  ],
+                  "uv_size": [
+                    5,
+                    2
+                  ],
+                  "material_instance": "blue"
+                },
+                "south": {
+                  "uv": [
+                    19,
+                    14
+                  ],
+                  "uv_size": [
+                    5,
+                    2
+                  ],
+                  "material_instance": "blue"
+                },
+                "west": {
+                  "uv": [
+                    19,
+                    14
+                  ],
+                  "uv_size": [
+                    5,
+                    2
+                  ],
+                  "material_instance": "blue"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "name": "red_n",
+          "pivot": [
+            0,
+            0,
+            0
+          ],
+          "cubes": [
+            {
+              "origin": [
+                -1,
+                0.02,
+                -8.14
+              ],
+              "size": [
+                2,
+                0.12,
+                5.14
+              ],
+              "uv": {
+                "up": {
+                  "uv": [
+                    18,
+                    15
+                  ],
+                  "uv_size": [
+                    1,
+                    1
+                  ],
+                  "material_instance": "red"
+                },
+                "down": {
+                  "uv": [
+                    18,
+                    15
+                  ],
+                  "uv_size": [
+                    1,
+                    1
+                  ],
+                  "material_instance": "red"
+                },
+                "north": {
+                  "uv": [
+                    18,
+                    15
+                  ],
+                  "uv_size": [
+                    1,
+                    1
+                  ],
+                  "material_instance": "red"
+                },
+                "east": {
+                  "uv": [
+                    18,
+                    15
+                  ],
+                  "uv_size": [
+                    1,
+                    1
+                  ],
+                  "material_instance": "red"
+                },
+                "south": {
+                  "uv": [
+                    18,
+                    15
+                  ],
+                  "uv_size": [
+                    1,
+                    1
+                  ],
+                  "material_instance": "red"
+                },
+                "west": {
+                  "uv": [
+                    18,
+                    15
+                  ],
+                  "uv_size": [
+                    1,
+                    1
+                  ],
+                  "material_instance": "red"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "name": "red_e",
+          "pivot": [
+            0,
+            0,
+            0
+          ],
+          "cubes": [
+            {
+              "origin": [
+                -8.14,
+                0.02,
+                -1
+              ],
+              "size": [
+                5.14,
+                0.12,
+                2
+              ],
+              "uv": {
+                "up": {
+                  "uv": [
+                    18,
+                    15
+                  ],
+                  "uv_size": [
+                    1,
+                    1
+                  ],
+                  "material_instance": "red"
+                },
+                "down": {
+                  "uv": [
+                    18,
+                    15
+                  ],
+                  "uv_size": [
+                    1,
+                    1
+                  ],
+                  "material_instance": "red"
+                },
+                "north": {
+                  "uv": [
+                    18,
+                    15
+                  ],
+                  "uv_size": [
+                    1,
+                    1
+                  ],
+                  "material_instance": "red"
+                },
+                "east": {
+                  "uv": [
+                    18,
+                    15
+                  ],
+                  "uv_size": [
+                    1,
+                    1
+                  ],
+                  "material_instance": "red"
+                },
+                "south": {
+                  "uv": [
+                    18,
+                    15
+                  ],
+                  "uv_size": [
+                    1,
+                    1
+                  ],
+                  "material_instance": "red"
+                },
+                "west": {
+                  "uv": [
+                    18,
+                    15
+                  ],
+                  "uv_size": [
+                    1,
+                    1
+                  ],
+                  "material_instance": "red"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "name": "red_s",
+          "pivot": [
+            0,
+            0,
+            0
+          ],
+          "cubes": [
+            {
+              "origin": [
+                -1,
+                0.02,
+                3
+              ],
+              "size": [
+                2,
+                0.12,
+                5.14
+              ],
+              "uv": {
+                "up": {
+                  "uv": [
+                    18,
+                    15
+                  ],
+                  "uv_size": [
+                    1,
+                    1
+                  ],
+                  "material_instance": "red"
+                },
+                "down": {
+                  "uv": [
+                    18,
+                    15
+                  ],
+                  "uv_size": [
+                    1,
+                    1
+                  ],
+                  "material_instance": "red"
+                },
+                "north": {
+                  "uv": [
+                    18,
+                    15
+                  ],
+                  "uv_size": [
+                    1,
+                    1
+                  ],
+                  "material_instance": "red"
+                },
+                "east": {
+                  "uv": [
+                    18,
+                    15
+                  ],
+                  "uv_size": [
+                    1,
+                    1
+                  ],
+                  "material_instance": "red"
+                },
+                "south": {
+                  "uv": [
+                    18,
+                    15
+                  ],
+                  "uv_size": [
+                    1,
+                    1
+                  ],
+                  "material_instance": "red"
+                },
+                "west": {
+                  "uv": [
+                    18,
+                    15
+                  ],
+                  "uv_size": [
+                    1,
+                    1
+                  ],
+                  "material_instance": "red"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "name": "red_w",
+          "pivot": [
+            0,
+            0,
+            0
+          ],
+          "cubes": [
+            {
+              "origin": [
+                3,
+                0.02,
+                -1
+              ],
+              "size": [
+                5.14,
+                0.12,
+                2
+              ],
+              "uv": {
+                "up": {
+                  "uv": [
+                    18,
+                    15
+                  ],
+                  "uv_size": [
+                    1,
+                    1
+                  ],
+                  "material_instance": "red"
+                },
+                "down": {
+                  "uv": [
+                    18,
+                    15
+                  ],
+                  "uv_size": [
+                    1,
+                    1
+                  ],
+                  "material_instance": "red"
+                },
+                "north": {
+                  "uv": [
+                    18,
+                    15
+                  ],
+                  "uv_size": [
+                    1,
+                    1
+                  ],
+                  "material_instance": "red"
+                },
+                "east": {
+                  "uv": [
+                    18,
+                    15
+                  ],
+                  "uv_size": [
+                    1,
+                    1
+                  ],
+                  "material_instance": "red"
+                },
+                "south": {
+                  "uv": [
+                    18,
+                    15
+                  ],
+                  "uv_size": [
+                    1,
+                    1
+                  ],
+                  "material_instance": "red"
+                },
+                "west": {
+                  "uv": [
+                    18,
+                    15
+                  ],
+                  "uv_size": [
+                    1,
+                    1
+                  ],
+                  "material_instance": "red"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

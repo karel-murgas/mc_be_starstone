@@ -1,0 +1,15 @@
+{
+  "format_version": "1.20.10",
+  "minecraft:recipe_shaped": {
+    "description": { "identifier": "starstone:generator_recipe" },
+    "tags": ["crafting_table"],
+    "unlock": [{ "item": "starstone:crystal" }],
+    "pattern": ["CCC", "SGS", "CCC"],
+    "key": {
+      "C": { "item": "minecraft:copper_ingot" },
+      "S": { "item": "starstone:crystal" },
+      "G": { "item": "minecraft:gold_ingot" }
+    },
+    "result": { "item": "starstone:generator", "count": 1 }
+  }
+}

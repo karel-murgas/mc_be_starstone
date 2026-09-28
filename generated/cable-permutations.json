@@ -1,0 +1,209 @@
+[
+  {
+    "mask": 0,
+    "connections": "0000",
+    "visible": [
+      "center"
+    ],
+    "arms": []
+  },
+  {
+    "mask": 1,
+    "connections": "0001",
+    "visible": [
+      "center",
+      "arm_n"
+    ],
+    "arms": [
+      "arm_n"
+    ]
+  },
+  {
+    "mask": 2,
+    "connections": "0002",
+    "visible": [
+      "center",
+      "arm_e"
+    ],
+    "arms": [
+      "arm_e"
+    ]
+  },
+  {
+    "mask": 3,
+    "connections": "0003",
+    "visible": [
+      "center",
+      "arm_n",
+      "arm_e"
+    ],
+    "arms": [
+      "arm_n",
+      "arm_e"
+    ]
+  },
+  {
+    "mask": 4,
+    "connections": "0004",
+    "visible": [
+      "center",
+      "arm_s"
+    ],
+    "arms": [
+      "arm_s"
+    ]
+  },
+  {
+    "mask": 5,
+    "connections": "0005",
+    "visible": [
+      "center",
+      "arm_n",
+      "arm_s"
+    ],
+    "arms": [
+      "arm_n",
+      "arm_s"
+    ]
+  },
+  {
+    "mask": 6,
+    "connections": "0006",
+    "visible": [
+      "center",
+      "arm_e",
+      "arm_s"
+    ],
+    "arms": [
+      "arm_e",
+      "arm_s"
+    ]
+  },
+  {
+    "mask": 7,
+    "connections": "0007",
+    "visible": [
+      "center",
+      "arm_n",
+      "arm_e",
+      "arm_s"
+    ],
+    "arms": [
+      "arm_n",
+      "arm_e",
+      "arm_s"
+    ]
+  },
+  {
+    "mask": 8,
+    "connections": "0008",
+    "visible": [
+      "center",
+      "arm_w"
+    ],
+    "arms": [
+      "arm_w"
+    ]
+  },
+  {
+    "mask": 9,
+    "connections": "0009",
+    "visible": [
+      "center",
+      "arm_n",
+      "arm_w"
+    ],
+    "arms": [
+      "arm_n",
+      "arm_w"
+    ]
+  },
+  {
+    "mask": 10,
+    "connections": "0010",
+    "visible": [
+      "center",
+      "arm_e",
+      "arm_w"
+    ],
+    "arms": [
+      "arm_e",
+      "arm_w"
+    ]
+  },
+  {
+    "mask": 11,
+    "connections": "0011",
+    "visible": [
+      "center",
+      "arm_n",
+      "arm_e",
+      "arm_w"
+    ],
+    "arms": [
+      "arm_n",
+      "arm_e",
+      "arm_w"
+    ]
+  },
+  {
+    "mask": 12,
+    "connections": "0012",
+    "visible": [
+      "center",
+      "arm_s",
+      "arm_w"
+    ],
+    "arms": [
+      "arm_s",
+      "arm_w"
+    ]
+  },
+  {
+    "mask": 13,
+    "connections": "0013",
+    "visible": [
+      "center",
+      "arm_n",
+      "arm_s",
+      "arm_w"
+    ],
+    "arms": [
+      "arm_n",
+      "arm_s",
+      "arm_w"
+    ]
+  },
+  {
+    "mask": 14,
+    "connections": "0014",
+    "visible": [
+      "center",
+      "arm_e",
+      "arm_s",
+      "arm_w"
+    ],
+    "arms": [
+      "arm_e",
+      "arm_s",
+      "arm_w"
+    ]
+  },
+  {
+    "mask": 15,
+    "connections": "0015",
+    "visible": [
+      "center",
+      "arm_n",
+      "arm_e",
+      "arm_s",
+      "arm_w"
+    ],
+    "arms": [
+      "arm_n",
+      "arm_e",
+      "arm_s",
+      "arm_w"
+    ]
+  }
+]

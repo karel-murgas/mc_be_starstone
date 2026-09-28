@@ -1,0 +1,56 @@
+{
+    "format_version": "1.21.120",
+    "minecraft:block": {
+        "description": {
+            "identifier": "starstone:generator",
+            "menu_category": {
+                "category": "items"
+            },
+            "states": {
+                "starstone:enabled": [
+                    true,
+                    false
+                ]
+            }
+        },
+        "components": {
+            "minecraft:map_color": [
+                30,
+                40,
+                60
+            ],
+            "minecraft:destructible_by_mining": {
+                "seconds_to_destroy": 0.5
+            },
+            "minecraft:loot": "loot_tables/blocks/generator.json",
+            "minecraft:geometry": "minecraft:geometry.full_block",
+            "minecraft:material_instances": {
+                "*": {
+                    "texture": "starstone:generator_off",
+                    "face_dimming": false,
+                    "ambient_occlusion": false
+                }
+            },
+            "starstone:generator": {},
+            "minecraft:movable": {
+                "movement_type": "immovable"
+            },
+            "minecraft:light_emission": 0
+        },
+        "permutations": [
+            {
+                "condition": "query.block_state('starstone:enabled') == true",
+                "components": {
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "starstone:generator",
+                            "face_dimming": false,
+                            "ambient_occlusion": false
+                        }
+                    },
+                    "minecraft:light_emission": 1
+                }
+            }
+        ]
+    }
+}

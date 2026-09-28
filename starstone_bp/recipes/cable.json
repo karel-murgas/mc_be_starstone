@@ -1,0 +1,14 @@
+{
+  "format_version": "1.20.10",
+  "minecraft:recipe_shaped": {
+    "description": { "identifier": "starstone:cable_recipe" },
+    "tags": ["crafting_table"],
+    "unlock": [{ "item": "starstone:dust" }],
+    "pattern": ["CSC"],
+    "key": {
+      "C": { "item": "minecraft:copper_ingot" },
+      "S": { "item": "starstone:dust" }
+    },
+    "result": { "item": "starstone:cable_item", "count": 1 }
+  }
+}

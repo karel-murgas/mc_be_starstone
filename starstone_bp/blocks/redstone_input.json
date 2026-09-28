@@ -1,0 +1,313 @@
+{
+    "format_version": "1.21.120",
+    "minecraft:block": {
+        "description": {
+            "identifier": "starstone:redstone_input",
+            "menu_category": {
+                "category": "items"
+            },
+            "traits": {
+                "minecraft:placement_position": {
+                    "enabled_states": [
+                        "minecraft:block_face"
+                    ]
+                }
+            },
+            "states": {
+                "starstone:connections": [
+                    0,
+                    1,
+                    2,
+                    3,
+                    4,
+                    5,
+                    6,
+                    7,
+                    8,
+                    9,
+                    10,
+                    11,
+                    12,
+                    13,
+                    14,
+                    15
+                ],
+                "starstone:redstone_connections": [
+                    0,
+                    1,
+                    2,
+                    3,
+                    4,
+                    5,
+                    6,
+                    7,
+                    8,
+                    9,
+                    10,
+                    11,
+                    12,
+                    13,
+                    14,
+                    15
+                ],
+                "starstone:powered": [
+                    false,
+                    true
+                ],
+                "starstone:star_powered": [
+                    false,
+                    true
+                ]
+            }
+        },
+        "components": {
+            "starstone:surface": {},
+            "minecraft:selection_box": {
+                "origin": [
+                    -8,
+                    0,
+                    -8
+                ],
+                "size": [
+                    16,
+                    3,
+                    16
+                ]
+            },
+            "minecraft:collision_box": {
+                "origin": [
+                    -8,
+                    0,
+                    -8
+                ],
+                "size": [
+                    16,
+                    3,
+                    16
+                ]
+            },
+            "minecraft:map_color": [
+                30,
+                40,
+                60
+            ],
+            "minecraft:destructible_by_mining": {
+                "seconds_to_destroy": 0.5
+            },
+            "minecraft:loot": "loot_tables/blocks/redstone_input.json",
+            "minecraft:geometry": {
+                "identifier": "geometry.starstone_adapter",
+                "bone_visibility": {
+                    "center": true,
+                    "blue_n": "query.block_state('starstone:connections') == 1 || query.block_state('starstone:connections') == 3 || query.block_state('starstone:connections') == 5 || query.block_state('starstone:connections') == 7 || query.block_state('starstone:connections') == 9 || query.block_state('starstone:connections') == 11 || query.block_state('starstone:connections') == 13 || query.block_state('starstone:connections') == 15",
+                    "blue_e": "query.block_state('starstone:connections') == 2 || query.block_state('starstone:connections') == 3 || query.block_state('starstone:connections') == 6 || query.block_state('starstone:connections') == 7 || query.block_state('starstone:connections') == 10 || query.block_state('starstone:connections') == 11 || query.block_state('starstone:connections') == 14 || query.block_state('starstone:connections') == 15",
+                    "blue_s": "query.block_state('starstone:connections') == 4 || query.block_state('starstone:connections') == 5 || query.block_state('starstone:connections') == 6 || query.block_state('starstone:connections') == 7 || query.block_state('starstone:connections') == 12 || query.block_state('starstone:connections') == 13 || query.block_state('starstone:connections') == 14 || query.block_state('starstone:connections') == 15",
+                    "blue_w": "query.block_state('starstone:connections') == 8 || query.block_state('starstone:connections') == 9 || query.block_state('starstone:connections') == 10 || query.block_state('starstone:connections') == 11 || query.block_state('starstone:connections') == 12 || query.block_state('starstone:connections') == 13 || query.block_state('starstone:connections') == 14 || query.block_state('starstone:connections') == 15",
+                    "red_n": "query.block_state('starstone:redstone_connections') == 1 || query.block_state('starstone:redstone_connections') == 3 || query.block_state('starstone:redstone_connections') == 5 || query.block_state('starstone:redstone_connections') == 7 || query.block_state('starstone:redstone_connections') == 9 || query.block_state('starstone:redstone_connections') == 11 || query.block_state('starstone:redstone_connections') == 13 || query.block_state('starstone:redstone_connections') == 15",
+                    "red_e": "query.block_state('starstone:redstone_connections') == 2 || query.block_state('starstone:redstone_connections') == 3 || query.block_state('starstone:redstone_connections') == 6 || query.block_state('starstone:redstone_connections') == 7 || query.block_state('starstone:redstone_connections') == 10 || query.block_state('starstone:redstone_connections') == 11 || query.block_state('starstone:redstone_connections') == 14 || query.block_state('starstone:redstone_connections') == 15",
+                    "red_s": "query.block_state('starstone:redstone_connections') == 4 || query.block_state('starstone:redstone_connections') == 5 || query.block_state('starstone:redstone_connections') == 6 || query.block_state('starstone:redstone_connections') == 7 || query.block_state('starstone:redstone_connections') == 12 || query.block_state('starstone:redstone_connections') == 13 || query.block_state('starstone:redstone_connections') == 14 || query.block_state('starstone:redstone_connections') == 15",
+                    "red_w": "query.block_state('starstone:redstone_connections') == 8 || query.block_state('starstone:redstone_connections') == 9 || query.block_state('starstone:redstone_connections') == 10 || query.block_state('starstone:redstone_connections') == 11 || query.block_state('starstone:redstone_connections') == 12 || query.block_state('starstone:redstone_connections') == 13 || query.block_state('starstone:redstone_connections') == 14 || query.block_state('starstone:redstone_connections') == 15"
+                }
+            },
+            "minecraft:material_instances": {
+                "center": {
+                    "texture": "starstone:redstone_input",
+                    "render_method": "alpha_test",
+                    "face_dimming": false,
+                    "ambient_occlusion": false
+                },
+                "blue": {
+                    "texture": "starstone:cable_arm_off",
+                    "render_method": "alpha_test",
+                    "face_dimming": false,
+                    "ambient_occlusion": false
+                },
+                "red": {
+                    "texture": "starstone:redstone_arm_off",
+                    "render_method": "alpha_test",
+                    "face_dimming": false,
+                    "ambient_occlusion": false
+                },
+                "*": {
+                    "texture": "starstone:redstone_input",
+                    "render_method": "alpha_test",
+                    "face_dimming": false,
+                    "ambient_occlusion": false
+                }
+            },
+            "minecraft:movable": {
+                "movement_type": "immovable"
+            },
+            "minecraft:light_emission": 0
+        },
+        "permutations": [
+            {
+                "condition": "query.block_state('minecraft:block_face') == 'up'",
+                "components": {
+                    "minecraft:transformation": {
+                        "rotation": [
+                            0,
+                            0,
+                            0
+                        ]
+                    }
+                }
+            },
+            {
+                "condition": "query.block_state('minecraft:block_face') == 'down'",
+                "components": {
+                    "minecraft:transformation": {
+                        "rotation": [
+                            180,
+                            0,
+                            0
+                        ]
+                    }
+                }
+            },
+            {
+                "condition": "query.block_state('minecraft:block_face') == 'south'",
+                "components": {
+                    "minecraft:transformation": {
+                        "rotation": [
+                            90,
+                            0,
+                            0
+                        ]
+                    }
+                }
+            },
+            {
+                "condition": "query.block_state('minecraft:block_face') == 'north'",
+                "components": {
+                    "minecraft:transformation": {
+                        "rotation": [
+                            90,
+                            180,
+                            0
+                        ]
+                    }
+                }
+            },
+            {
+                "condition": "query.block_state('minecraft:block_face') == 'east'",
+                "components": {
+                    "minecraft:transformation": {
+                        "rotation": [
+                            90,
+                            90,
+                            0
+                        ]
+                    }
+                }
+            },
+            {
+                "condition": "query.block_state('minecraft:block_face') == 'west'",
+                "components": {
+                    "minecraft:transformation": {
+                        "rotation": [
+                            90,
+                            -90,
+                            0
+                        ]
+                    }
+                }
+            },
+            {
+                "condition": "query.block_state('starstone:star_powered') == false && query.block_state('starstone:powered') == true",
+                "components": {
+                    "minecraft:material_instances": {
+                        "center": {
+                            "texture": "starstone:redstone_input",
+                            "render_method": "alpha_test",
+                            "face_dimming": false,
+                            "ambient_occlusion": false
+                        },
+                        "blue": {
+                            "texture": "starstone:cable_arm_off",
+                            "render_method": "alpha_test",
+                            "face_dimming": false,
+                            "ambient_occlusion": false
+                        },
+                        "red": {
+                            "texture": "starstone:redstone_arm_on",
+                            "render_method": "alpha_test",
+                            "face_dimming": false,
+                            "ambient_occlusion": false
+                        },
+                        "*": {
+                            "texture": "starstone:redstone_input",
+                            "render_method": "alpha_test",
+                            "face_dimming": false,
+                            "ambient_occlusion": false
+                        }
+                    }
+                }
+            },
+            {
+                "condition": "query.block_state('starstone:star_powered') == true && query.block_state('starstone:powered') == false",
+                "components": {
+                    "minecraft:material_instances": {
+                        "center": {
+                            "texture": "starstone:redstone_input",
+                            "render_method": "alpha_test",
+                            "face_dimming": false,
+                            "ambient_occlusion": false
+                        },
+                        "blue": {
+                            "texture": "starstone:cable_arm_on",
+                            "render_method": "alpha_test",
+                            "face_dimming": false,
+                            "ambient_occlusion": false
+                        },
+                        "red": {
+                            "texture": "starstone:redstone_arm_off",
+                            "render_method": "alpha_test",
+                            "face_dimming": false,
+                            "ambient_occlusion": false
+                        },
+                        "*": {
+                            "texture": "starstone:redstone_input",
+                            "render_method": "alpha_test",
+                            "face_dimming": false,
+                            "ambient_occlusion": false
+                        }
+                    },
+                    "minecraft:light_emission": 1
+                }
+            },
+            {
+                "condition": "query.block_state('starstone:star_powered') == true && query.block_state('starstone:powered') == true",
+                "components": {
+                    "minecraft:material_instances": {
+                        "center": {
+                            "texture": "starstone:redstone_input",
+                            "render_method": "alpha_test",
+                            "face_dimming": false,
+                            "ambient_occlusion": false
+                        },
+                        "blue": {
+                            "texture": "starstone:cable_arm_on",
+                            "render_method": "alpha_test",
+                            "face_dimming": false,
+                            "ambient_occlusion": false
+                        },
+                        "red": {
+                            "texture": "starstone:redstone_arm_on",
+                            "render_method": "alpha_test",
+                            "face_dimming": false,
+                            "ambient_occlusion": false
+                        },
+                        "*": {
+                            "texture": "starstone:redstone_input",
+                            "render_method": "alpha_test",
+                            "face_dimming": false,
+                            "ambient_occlusion": false
+                        }
+                    },
+                    "minecraft:light_emission": 1
+                }
+            }
+        ]
+    }
+}

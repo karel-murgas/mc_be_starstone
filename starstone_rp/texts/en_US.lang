@@ -1,0 +1,38 @@
+pack.name=Starstone RP
+pack.description=Textures, models and text for the Starstone add-on.
+tile.starstone:cable.name=Starstone Cable
+item.starstone:cable_item=Starstone Cable
+item.starstone:inner_corner_item=Starstone Inner Corner
+tile.starstone:inner_corner.name=Starstone Inner Corner
+tile.starstone:bridge.name=Starstone Bridge
+tile.starstone:generator.name=Starstone Generator
+tile.starstone:lamp.name=Starstone Lamp
+tile.starstone:conduit.name=Starstone Conduit
+tile.starstone:redstone_input.name=Starstone Redstone Input
+tile.starstone:redstone_output.name=Starstone Redstone Output
+tile.starstone:ore.name=Starstone Ore
+item.starstone:dust=Starstone Dust
+item.starstone:crystal=Starstone Crystal
+item.starstone:compressed_dust=Compressed Starstone Dust
+starstone.message.diagnose.counts=[Starstone] networks=%s nodes=%s rebuildJobs=%s  
+starstone.message.diagnose.validation=[Starstone] mutationJobs=%s validation=%s/%s per %s ticks  
+starstone.message.diagnose.logical=[Starstone] logicalNetworks=%s chunkJobs=%s chunkRetry=%s inputSources=%s inputPolled=%s  
+starstone.message.diagnose.power=[Starstone] powerQueue=%s peak=%s planning=%s addon world dynamic-property bytes=%s  
+starstone.message.target.none=[Starstone] looking at: no block targeted
+starstone.message.target.other=[Starstone] looking at: %s: not an electrical block
+starstone.message.target.electrical=[Starstone] looking at: %s (%s), %s lane(s), %s powered
+starstone.message.debug.active=  [Starstone] debug logs are on
+starstone.message.debug.on=[Starstone] Debug logs: on
+starstone.message.debug.off=[Starstone] Debug logs: off
+starstone.message.debug.usage_on=[Starstone] Debug logs: on. Use /scriptevent starstone:debug on|off
+starstone.message.debug.usage_off=[Starstone] Debug logs: off. Use /scriptevent starstone:debug on|off
+starstone.message.rebuild.start=[Starstone] Rebuilding within %s blocks (%s up/down)...
+starstone.message.rebuild.complete=[Starstone] Rebuild complete: %s electrical block(s), %s component(s).
+starstone.message.rebuild.busy=[Starstone] A rebuild is already running; starting none.
+starstone.message.chunk.loaded=[Starstone] dimension=%s chunk=(%s,%s) y=%s loaded=true
+starstone.message.chunk.unloaded=[Starstone] dimension=%s chunk=(%s,%s) y=%s loaded=false
+starstone.message.chunk.unavailable=[Starstone] dimension=%s chunk=(%s,%s) y=%s load status unavailable
+starstone.message.chunk.usage=[Starstone] Use /scriptevent starstone:diagnose chunk <cx> <cz> [y]. Coordinates must be integers.
+starstone.message.cable.target=[Starstone] Look directly at a Starstone cable within 6 blocks, then use /scriptevent starstone:diagnose cable.
+starstone.message.cable.invalid=[Starstone] Cable has an unreadable face or connection mask.
+starstone.message.cable.state=[Starstone] cable=(%s,%s,%s) face=%s mask=%s arms=%s

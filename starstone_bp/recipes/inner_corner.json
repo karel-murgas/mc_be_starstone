@@ -1,0 +1,29 @@
+{
+  "format_version": "1.20.10",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "starstone:inner_corner_recipe"
+    },
+    "tags": [
+      "crafting_table"
+    ],
+    "unlock": [
+      {
+        "item": "starstone:cable_item"
+      }
+    ],
+    "pattern": [
+      "C ",
+      " C"
+    ],
+    "key": {
+      "C": {
+        "item": "starstone:cable_item"
+      }
+    },
+    "result": {
+      "item": "starstone:inner_corner_item",
+      "count": 1
+    }
+  }
+}

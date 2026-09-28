@@ -1,0 +1,177 @@
+{
+  "format_version": "1.21.120",
+  "minecraft:block": {
+    "description": {
+      "identifier": "starstone:inner_corner",
+      "menu_category": {
+        "category": "none"
+      },
+      "states": {
+        "starstone:face_mask_low": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15
+        ],
+        "starstone:face_mask_high": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "starstone:arms_low": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15
+        ],
+        "starstone:arms_high": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15
+        ],
+        "starstone:powered": [
+          false,
+          true
+        ]
+      }
+    },
+    "components": {
+      "minecraft:selection_box": {
+        "origin": [
+          -8,
+          0,
+          -8
+        ],
+        "size": [
+          16,
+          16,
+          16
+        ]
+      },
+      "minecraft:collision_box": false,
+      "minecraft:map_color": [
+        30,
+        40,
+        60
+      ],
+      "minecraft:destructible_by_mining": {
+        "seconds_to_destroy": 0.5
+      },
+      "minecraft:loot": "loot_tables/blocks/inner_corner.json",
+      "minecraft:geometry": {
+        "identifier": "geometry.starstone_inner_corner",
+        "bone_visibility": {
+          "center_up": "(query.block_state('starstone:face_mask_low') == 1 || query.block_state('starstone:face_mask_low') == 3 || query.block_state('starstone:face_mask_low') == 5 || query.block_state('starstone:face_mask_low') == 7 || query.block_state('starstone:face_mask_low') == 9 || query.block_state('starstone:face_mask_low') == 11 || query.block_state('starstone:face_mask_low') == 13 || query.block_state('starstone:face_mask_low') == 15)",
+          "center_down": "(query.block_state('starstone:face_mask_low') == 2 || query.block_state('starstone:face_mask_low') == 3 || query.block_state('starstone:face_mask_low') == 6 || query.block_state('starstone:face_mask_low') == 7 || query.block_state('starstone:face_mask_low') == 10 || query.block_state('starstone:face_mask_low') == 11 || query.block_state('starstone:face_mask_low') == 14 || query.block_state('starstone:face_mask_low') == 15)",
+          "center_north": "(query.block_state('starstone:face_mask_low') == 4 || query.block_state('starstone:face_mask_low') == 5 || query.block_state('starstone:face_mask_low') == 6 || query.block_state('starstone:face_mask_low') == 7 || query.block_state('starstone:face_mask_low') == 12 || query.block_state('starstone:face_mask_low') == 13 || query.block_state('starstone:face_mask_low') == 14 || query.block_state('starstone:face_mask_low') == 15)",
+          "center_south": "(query.block_state('starstone:face_mask_low') == 8 || query.block_state('starstone:face_mask_low') == 9 || query.block_state('starstone:face_mask_low') == 10 || query.block_state('starstone:face_mask_low') == 11 || query.block_state('starstone:face_mask_low') == 12 || query.block_state('starstone:face_mask_low') == 13 || query.block_state('starstone:face_mask_low') == 14 || query.block_state('starstone:face_mask_low') == 15)",
+          "center_east": "(query.block_state('starstone:face_mask_high') == 1 || query.block_state('starstone:face_mask_high') == 3)",
+          "center_west": "(query.block_state('starstone:face_mask_high') == 2 || query.block_state('starstone:face_mask_high') == 3)",
+          "arm_up_north": "(query.block_state('starstone:face_mask_low') == 1 || query.block_state('starstone:face_mask_low') == 3 || query.block_state('starstone:face_mask_low') == 5 || query.block_state('starstone:face_mask_low') == 7 || query.block_state('starstone:face_mask_low') == 9 || query.block_state('starstone:face_mask_low') == 11 || query.block_state('starstone:face_mask_low') == 13 || query.block_state('starstone:face_mask_low') == 15) && ((query.block_state('starstone:face_mask_low') == 8 || query.block_state('starstone:face_mask_low') == 9 || query.block_state('starstone:face_mask_low') == 10 || query.block_state('starstone:face_mask_low') == 11 || query.block_state('starstone:face_mask_low') == 12 || query.block_state('starstone:face_mask_low') == 13 || query.block_state('starstone:face_mask_low') == 14 || query.block_state('starstone:face_mask_low') == 15) || (query.block_state('starstone:arms_low') == 1 || query.block_state('starstone:arms_low') == 3 || query.block_state('starstone:arms_low') == 5 || query.block_state('starstone:arms_low') == 7 || query.block_state('starstone:arms_low') == 9 || query.block_state('starstone:arms_low') == 11 || query.block_state('starstone:arms_low') == 13 || query.block_state('starstone:arms_low') == 15))",
+          "arm_up_south": "(query.block_state('starstone:face_mask_low') == 1 || query.block_state('starstone:face_mask_low') == 3 || query.block_state('starstone:face_mask_low') == 5 || query.block_state('starstone:face_mask_low') == 7 || query.block_state('starstone:face_mask_low') == 9 || query.block_state('starstone:face_mask_low') == 11 || query.block_state('starstone:face_mask_low') == 13 || query.block_state('starstone:face_mask_low') == 15) && ((query.block_state('starstone:face_mask_low') == 4 || query.block_state('starstone:face_mask_low') == 5 || query.block_state('starstone:face_mask_low') == 6 || query.block_state('starstone:face_mask_low') == 7 || query.block_state('starstone:face_mask_low') == 12 || query.block_state('starstone:face_mask_low') == 13 || query.block_state('starstone:face_mask_low') == 14 || query.block_state('starstone:face_mask_low') == 15) || (query.block_state('starstone:arms_low') == 2 || query.block_state('starstone:arms_low') == 3 || query.block_state('starstone:arms_low') == 6 || query.block_state('starstone:arms_low') == 7 || query.block_state('starstone:arms_low') == 10 || query.block_state('starstone:arms_low') == 11 || query.block_state('starstone:arms_low') == 14 || query.block_state('starstone:arms_low') == 15))",
+          "arm_up_east": "(query.block_state('starstone:face_mask_low') == 1 || query.block_state('starstone:face_mask_low') == 3 || query.block_state('starstone:face_mask_low') == 5 || query.block_state('starstone:face_mask_low') == 7 || query.block_state('starstone:face_mask_low') == 9 || query.block_state('starstone:face_mask_low') == 11 || query.block_state('starstone:face_mask_low') == 13 || query.block_state('starstone:face_mask_low') == 15) && ((query.block_state('starstone:face_mask_high') == 2 || query.block_state('starstone:face_mask_high') == 3) || (query.block_state('starstone:arms_low') == 4 || query.block_state('starstone:arms_low') == 5 || query.block_state('starstone:arms_low') == 6 || query.block_state('starstone:arms_low') == 7 || query.block_state('starstone:arms_low') == 12 || query.block_state('starstone:arms_low') == 13 || query.block_state('starstone:arms_low') == 14 || query.block_state('starstone:arms_low') == 15))",
+          "arm_up_west": "(query.block_state('starstone:face_mask_low') == 1 || query.block_state('starstone:face_mask_low') == 3 || query.block_state('starstone:face_mask_low') == 5 || query.block_state('starstone:face_mask_low') == 7 || query.block_state('starstone:face_mask_low') == 9 || query.block_state('starstone:face_mask_low') == 11 || query.block_state('starstone:face_mask_low') == 13 || query.block_state('starstone:face_mask_low') == 15) && ((query.block_state('starstone:face_mask_high') == 1 || query.block_state('starstone:face_mask_high') == 3) || (query.block_state('starstone:arms_low') == 8 || query.block_state('starstone:arms_low') == 9 || query.block_state('starstone:arms_low') == 10 || query.block_state('starstone:arms_low') == 11 || query.block_state('starstone:arms_low') == 12 || query.block_state('starstone:arms_low') == 13 || query.block_state('starstone:arms_low') == 14 || query.block_state('starstone:arms_low') == 15))",
+          "arm_down_north": "(query.block_state('starstone:face_mask_low') == 2 || query.block_state('starstone:face_mask_low') == 3 || query.block_state('starstone:face_mask_low') == 6 || query.block_state('starstone:face_mask_low') == 7 || query.block_state('starstone:face_mask_low') == 10 || query.block_state('starstone:face_mask_low') == 11 || query.block_state('starstone:face_mask_low') == 14 || query.block_state('starstone:face_mask_low') == 15) && ((query.block_state('starstone:face_mask_low') == 8 || query.block_state('starstone:face_mask_low') == 9 || query.block_state('starstone:face_mask_low') == 10 || query.block_state('starstone:face_mask_low') == 11 || query.block_state('starstone:face_mask_low') == 12 || query.block_state('starstone:face_mask_low') == 13 || query.block_state('starstone:face_mask_low') == 14 || query.block_state('starstone:face_mask_low') == 15) || (query.block_state('starstone:arms_high') == 1 || query.block_state('starstone:arms_high') == 3 || query.block_state('starstone:arms_high') == 5 || query.block_state('starstone:arms_high') == 7 || query.block_state('starstone:arms_high') == 9 || query.block_state('starstone:arms_high') == 11 || query.block_state('starstone:arms_high') == 13 || query.block_state('starstone:arms_high') == 15))",
+          "arm_down_south": "(query.block_state('starstone:face_mask_low') == 2 || query.block_state('starstone:face_mask_low') == 3 || query.block_state('starstone:face_mask_low') == 6 || query.block_state('starstone:face_mask_low') == 7 || query.block_state('starstone:face_mask_low') == 10 || query.block_state('starstone:face_mask_low') == 11 || query.block_state('starstone:face_mask_low') == 14 || query.block_state('starstone:face_mask_low') == 15) && ((query.block_state('starstone:face_mask_low') == 4 || query.block_state('starstone:face_mask_low') == 5 || query.block_state('starstone:face_mask_low') == 6 || query.block_state('starstone:face_mask_low') == 7 || query.block_state('starstone:face_mask_low') == 12 || query.block_state('starstone:face_mask_low') == 13 || query.block_state('starstone:face_mask_low') == 14 || query.block_state('starstone:face_mask_low') == 15) || (query.block_state('starstone:arms_high') == 2 || query.block_state('starstone:arms_high') == 3 || query.block_state('starstone:arms_high') == 6 || query.block_state('starstone:arms_high') == 7 || query.block_state('starstone:arms_high') == 10 || query.block_state('starstone:arms_high') == 11 || query.block_state('starstone:arms_high') == 14 || query.block_state('starstone:arms_high') == 15))",
+          "arm_down_east": "(query.block_state('starstone:face_mask_low') == 2 || query.block_state('starstone:face_mask_low') == 3 || query.block_state('starstone:face_mask_low') == 6 || query.block_state('starstone:face_mask_low') == 7 || query.block_state('starstone:face_mask_low') == 10 || query.block_state('starstone:face_mask_low') == 11 || query.block_state('starstone:face_mask_low') == 14 || query.block_state('starstone:face_mask_low') == 15) && ((query.block_state('starstone:face_mask_high') == 2 || query.block_state('starstone:face_mask_high') == 3) || (query.block_state('starstone:arms_high') == 4 || query.block_state('starstone:arms_high') == 5 || query.block_state('starstone:arms_high') == 6 || query.block_state('starstone:arms_high') == 7 || query.block_state('starstone:arms_high') == 12 || query.block_state('starstone:arms_high') == 13 || query.block_state('starstone:arms_high') == 14 || query.block_state('starstone:arms_high') == 15))",
+          "arm_down_west": "(query.block_state('starstone:face_mask_low') == 2 || query.block_state('starstone:face_mask_low') == 3 || query.block_state('starstone:face_mask_low') == 6 || query.block_state('starstone:face_mask_low') == 7 || query.block_state('starstone:face_mask_low') == 10 || query.block_state('starstone:face_mask_low') == 11 || query.block_state('starstone:face_mask_low') == 14 || query.block_state('starstone:face_mask_low') == 15) && ((query.block_state('starstone:face_mask_high') == 1 || query.block_state('starstone:face_mask_high') == 3) || (query.block_state('starstone:arms_high') == 8 || query.block_state('starstone:arms_high') == 9 || query.block_state('starstone:arms_high') == 10 || query.block_state('starstone:arms_high') == 11 || query.block_state('starstone:arms_high') == 12 || query.block_state('starstone:arms_high') == 13 || query.block_state('starstone:arms_high') == 14 || query.block_state('starstone:arms_high') == 15))",
+          "arm_north_up": "(query.block_state('starstone:face_mask_low') == 4 || query.block_state('starstone:face_mask_low') == 5 || query.block_state('starstone:face_mask_low') == 6 || query.block_state('starstone:face_mask_low') == 7 || query.block_state('starstone:face_mask_low') == 12 || query.block_state('starstone:face_mask_low') == 13 || query.block_state('starstone:face_mask_low') == 14 || query.block_state('starstone:face_mask_low') == 15) && ((query.block_state('starstone:face_mask_low') == 2 || query.block_state('starstone:face_mask_low') == 3 || query.block_state('starstone:face_mask_low') == 6 || query.block_state('starstone:face_mask_low') == 7 || query.block_state('starstone:face_mask_low') == 10 || query.block_state('starstone:face_mask_low') == 11 || query.block_state('starstone:face_mask_low') == 14 || query.block_state('starstone:face_mask_low') == 15) || (query.block_state('starstone:arms_high') == 4 || query.block_state('starstone:arms_high') == 5 || query.block_state('starstone:arms_high') == 6 || query.block_state('starstone:arms_high') == 7 || query.block_state('starstone:arms_high') == 12 || query.block_state('starstone:arms_high') == 13 || query.block_state('starstone:arms_high') == 14 || query.block_state('starstone:arms_high') == 15))",
+          "arm_north_down": "(query.block_state('starstone:face_mask_low') == 4 || query.block_state('starstone:face_mask_low') == 5 || query.block_state('starstone:face_mask_low') == 6 || query.block_state('starstone:face_mask_low') == 7 || query.block_state('starstone:face_mask_low') == 12 || query.block_state('starstone:face_mask_low') == 13 || query.block_state('starstone:face_mask_low') == 14 || query.block_state('starstone:face_mask_low') == 15) && ((query.block_state('starstone:face_mask_low') == 1 || query.block_state('starstone:face_mask_low') == 3 || query.block_state('starstone:face_mask_low') == 5 || query.block_state('starstone:face_mask_low') == 7 || query.block_state('starstone:face_mask_low') == 9 || query.block_state('starstone:face_mask_low') == 11 || query.block_state('starstone:face_mask_low') == 13 || query.block_state('starstone:face_mask_low') == 15) || (query.block_state('starstone:arms_low') == 8 || query.block_state('starstone:arms_low') == 9 || query.block_state('starstone:arms_low') == 10 || query.block_state('starstone:arms_low') == 11 || query.block_state('starstone:arms_low') == 12 || query.block_state('starstone:arms_low') == 13 || query.block_state('starstone:arms_low') == 14 || query.block_state('starstone:arms_low') == 15))",
+          "arm_north_east": "(query.block_state('starstone:face_mask_low') == 4 || query.block_state('starstone:face_mask_low') == 5 || query.block_state('starstone:face_mask_low') == 6 || query.block_state('starstone:face_mask_low') == 7 || query.block_state('starstone:face_mask_low') == 12 || query.block_state('starstone:face_mask_low') == 13 || query.block_state('starstone:face_mask_low') == 14 || query.block_state('starstone:face_mask_low') == 15) && ((query.block_state('starstone:face_mask_high') == 2 || query.block_state('starstone:face_mask_high') == 3) || (query.block_state('starstone:arms_low') == 2 || query.block_state('starstone:arms_low') == 3 || query.block_state('starstone:arms_low') == 6 || query.block_state('starstone:arms_low') == 7 || query.block_state('starstone:arms_low') == 10 || query.block_state('starstone:arms_low') == 11 || query.block_state('starstone:arms_low') == 14 || query.block_state('starstone:arms_low') == 15))",
+          "arm_north_west": "(query.block_state('starstone:face_mask_low') == 4 || query.block_state('starstone:face_mask_low') == 5 || query.block_state('starstone:face_mask_low') == 6 || query.block_state('starstone:face_mask_low') == 7 || query.block_state('starstone:face_mask_low') == 12 || query.block_state('starstone:face_mask_low') == 13 || query.block_state('starstone:face_mask_low') == 14 || query.block_state('starstone:face_mask_low') == 15) && ((query.block_state('starstone:face_mask_high') == 1 || query.block_state('starstone:face_mask_high') == 3) || (query.block_state('starstone:arms_high') == 2 || query.block_state('starstone:arms_high') == 3 || query.block_state('starstone:arms_high') == 6 || query.block_state('starstone:arms_high') == 7 || query.block_state('starstone:arms_high') == 10 || query.block_state('starstone:arms_high') == 11 || query.block_state('starstone:arms_high') == 14 || query.block_state('starstone:arms_high') == 15))",
+          "arm_south_up": "(query.block_state('starstone:face_mask_low') == 8 || query.block_state('starstone:face_mask_low') == 9 || query.block_state('starstone:face_mask_low') == 10 || query.block_state('starstone:face_mask_low') == 11 || query.block_state('starstone:face_mask_low') == 12 || query.block_state('starstone:face_mask_low') == 13 || query.block_state('starstone:face_mask_low') == 14 || query.block_state('starstone:face_mask_low') == 15) && ((query.block_state('starstone:face_mask_low') == 2 || query.block_state('starstone:face_mask_low') == 3 || query.block_state('starstone:face_mask_low') == 6 || query.block_state('starstone:face_mask_low') == 7 || query.block_state('starstone:face_mask_low') == 10 || query.block_state('starstone:face_mask_low') == 11 || query.block_state('starstone:face_mask_low') == 14 || query.block_state('starstone:face_mask_low') == 15) || (query.block_state('starstone:arms_high') == 8 || query.block_state('starstone:arms_high') == 9 || query.block_state('starstone:arms_high') == 10 || query.block_state('starstone:arms_high') == 11 || query.block_state('starstone:arms_high') == 12 || query.block_state('starstone:arms_high') == 13 || query.block_state('starstone:arms_high') == 14 || query.block_state('starstone:arms_high') == 15))",
+          "arm_south_down": "(query.block_state('starstone:face_mask_low') == 8 || query.block_state('starstone:face_mask_low') == 9 || query.block_state('starstone:face_mask_low') == 10 || query.block_state('starstone:face_mask_low') == 11 || query.block_state('starstone:face_mask_low') == 12 || query.block_state('starstone:face_mask_low') == 13 || query.block_state('starstone:face_mask_low') == 14 || query.block_state('starstone:face_mask_low') == 15) && ((query.block_state('starstone:face_mask_low') == 1 || query.block_state('starstone:face_mask_low') == 3 || query.block_state('starstone:face_mask_low') == 5 || query.block_state('starstone:face_mask_low') == 7 || query.block_state('starstone:face_mask_low') == 9 || query.block_state('starstone:face_mask_low') == 11 || query.block_state('starstone:face_mask_low') == 13 || query.block_state('starstone:face_mask_low') == 15) || (query.block_state('starstone:arms_low') == 4 || query.block_state('starstone:arms_low') == 5 || query.block_state('starstone:arms_low') == 6 || query.block_state('starstone:arms_low') == 7 || query.block_state('starstone:arms_low') == 12 || query.block_state('starstone:arms_low') == 13 || query.block_state('starstone:arms_low') == 14 || query.block_state('starstone:arms_low') == 15))",
+          "arm_south_east": "(query.block_state('starstone:face_mask_low') == 8 || query.block_state('starstone:face_mask_low') == 9 || query.block_state('starstone:face_mask_low') == 10 || query.block_state('starstone:face_mask_low') == 11 || query.block_state('starstone:face_mask_low') == 12 || query.block_state('starstone:face_mask_low') == 13 || query.block_state('starstone:face_mask_low') == 14 || query.block_state('starstone:face_mask_low') == 15) && ((query.block_state('starstone:face_mask_high') == 2 || query.block_state('starstone:face_mask_high') == 3) || (query.block_state('starstone:arms_high') == 1 || query.block_state('starstone:arms_high') == 3 || query.block_state('starstone:arms_high') == 5 || query.block_state('starstone:arms_high') == 7 || query.block_state('starstone:arms_high') == 9 || query.block_state('starstone:arms_high') == 11 || query.block_state('starstone:arms_high') == 13 || query.block_state('starstone:arms_high') == 15))",
+          "arm_south_west": "(query.block_state('starstone:face_mask_low') == 8 || query.block_state('starstone:face_mask_low') == 9 || query.block_state('starstone:face_mask_low') == 10 || query.block_state('starstone:face_mask_low') == 11 || query.block_state('starstone:face_mask_low') == 12 || query.block_state('starstone:face_mask_low') == 13 || query.block_state('starstone:face_mask_low') == 14 || query.block_state('starstone:face_mask_low') == 15) && ((query.block_state('starstone:face_mask_high') == 1 || query.block_state('starstone:face_mask_high') == 3) || (query.block_state('starstone:arms_low') == 1 || query.block_state('starstone:arms_low') == 3 || query.block_state('starstone:arms_low') == 5 || query.block_state('starstone:arms_low') == 7 || query.block_state('starstone:arms_low') == 9 || query.block_state('starstone:arms_low') == 11 || query.block_state('starstone:arms_low') == 13 || query.block_state('starstone:arms_low') == 15))",
+          "arm_east_up": "(query.block_state('starstone:face_mask_high') == 1 || query.block_state('starstone:face_mask_high') == 3) && ((query.block_state('starstone:face_mask_low') == 2 || query.block_state('starstone:face_mask_low') == 3 || query.block_state('starstone:face_mask_low') == 6 || query.block_state('starstone:face_mask_low') == 7 || query.block_state('starstone:face_mask_low') == 10 || query.block_state('starstone:face_mask_low') == 11 || query.block_state('starstone:face_mask_low') == 14 || query.block_state('starstone:face_mask_low') == 15) || (query.block_state('starstone:arms_high') == 2 || query.block_state('starstone:arms_high') == 3 || query.block_state('starstone:arms_high') == 6 || query.block_state('starstone:arms_high') == 7 || query.block_state('starstone:arms_high') == 10 || query.block_state('starstone:arms_high') == 11 || query.block_state('starstone:arms_high') == 14 || query.block_state('starstone:arms_high') == 15))",
+          "arm_east_down": "(query.block_state('starstone:face_mask_high') == 1 || query.block_state('starstone:face_mask_high') == 3) && ((query.block_state('starstone:face_mask_low') == 1 || query.block_state('starstone:face_mask_low') == 3 || query.block_state('starstone:face_mask_low') == 5 || query.block_state('starstone:face_mask_low') == 7 || query.block_state('starstone:face_mask_low') == 9 || query.block_state('starstone:face_mask_low') == 11 || query.block_state('starstone:face_mask_low') == 13 || query.block_state('starstone:face_mask_low') == 15) || (query.block_state('starstone:arms_low') == 1 || query.block_state('starstone:arms_low') == 3 || query.block_state('starstone:arms_low') == 5 || query.block_state('starstone:arms_low') == 7 || query.block_state('starstone:arms_low') == 9 || query.block_state('starstone:arms_low') == 11 || query.block_state('starstone:arms_low') == 13 || query.block_state('starstone:arms_low') == 15))",
+          "arm_east_north": "(query.block_state('starstone:face_mask_high') == 1 || query.block_state('starstone:face_mask_high') == 3) && ((query.block_state('starstone:face_mask_low') == 8 || query.block_state('starstone:face_mask_low') == 9 || query.block_state('starstone:face_mask_low') == 10 || query.block_state('starstone:face_mask_low') == 11 || query.block_state('starstone:face_mask_low') == 12 || query.block_state('starstone:face_mask_low') == 13 || query.block_state('starstone:face_mask_low') == 14 || query.block_state('starstone:face_mask_low') == 15) || (query.block_state('starstone:arms_high') == 8 || query.block_state('starstone:arms_high') == 9 || query.block_state('starstone:arms_high') == 10 || query.block_state('starstone:arms_high') == 11 || query.block_state('starstone:arms_high') == 12 || query.block_state('starstone:arms_high') == 13 || query.block_state('starstone:arms_high') == 14 || query.block_state('starstone:arms_high') == 15))",
+          "arm_east_south": "(query.block_state('starstone:face_mask_high') == 1 || query.block_state('starstone:face_mask_high') == 3) && ((query.block_state('starstone:face_mask_low') == 4 || query.block_state('starstone:face_mask_low') == 5 || query.block_state('starstone:face_mask_low') == 6 || query.block_state('starstone:face_mask_low') == 7 || query.block_state('starstone:face_mask_low') == 12 || query.block_state('starstone:face_mask_low') == 13 || query.block_state('starstone:face_mask_low') == 14 || query.block_state('starstone:face_mask_low') == 15) || (query.block_state('starstone:arms_low') == 8 || query.block_state('starstone:arms_low') == 9 || query.block_state('starstone:arms_low') == 10 || query.block_state('starstone:arms_low') == 11 || query.block_state('starstone:arms_low') == 12 || query.block_state('starstone:arms_low') == 13 || query.block_state('starstone:arms_low') == 14 || query.block_state('starstone:arms_low') == 15))",
+          "arm_west_up": "(query.block_state('starstone:face_mask_high') == 2 || query.block_state('starstone:face_mask_high') == 3) && ((query.block_state('starstone:face_mask_low') == 2 || query.block_state('starstone:face_mask_low') == 3 || query.block_state('starstone:face_mask_low') == 6 || query.block_state('starstone:face_mask_low') == 7 || query.block_state('starstone:face_mask_low') == 10 || query.block_state('starstone:face_mask_low') == 11 || query.block_state('starstone:face_mask_low') == 14 || query.block_state('starstone:face_mask_low') == 15) || (query.block_state('starstone:arms_high') == 1 || query.block_state('starstone:arms_high') == 3 || query.block_state('starstone:arms_high') == 5 || query.block_state('starstone:arms_high') == 7 || query.block_state('starstone:arms_high') == 9 || query.block_state('starstone:arms_high') == 11 || query.block_state('starstone:arms_high') == 13 || query.block_state('starstone:arms_high') == 15))",
+          "arm_west_down": "(query.block_state('starstone:face_mask_high') == 2 || query.block_state('starstone:face_mask_high') == 3) && ((query.block_state('starstone:face_mask_low') == 1 || query.block_state('starstone:face_mask_low') == 3 || query.block_state('starstone:face_mask_low') == 5 || query.block_state('starstone:face_mask_low') == 7 || query.block_state('starstone:face_mask_low') == 9 || query.block_state('starstone:face_mask_low') == 11 || query.block_state('starstone:face_mask_low') == 13 || query.block_state('starstone:face_mask_low') == 15) || (query.block_state('starstone:arms_low') == 2 || query.block_state('starstone:arms_low') == 3 || query.block_state('starstone:arms_low') == 6 || query.block_state('starstone:arms_low') == 7 || query.block_state('starstone:arms_low') == 10 || query.block_state('starstone:arms_low') == 11 || query.block_state('starstone:arms_low') == 14 || query.block_state('starstone:arms_low') == 15))",
+          "arm_west_north": "(query.block_state('starstone:face_mask_high') == 2 || query.block_state('starstone:face_mask_high') == 3) && ((query.block_state('starstone:face_mask_low') == 8 || query.block_state('starstone:face_mask_low') == 9 || query.block_state('starstone:face_mask_low') == 10 || query.block_state('starstone:face_mask_low') == 11 || query.block_state('starstone:face_mask_low') == 12 || query.block_state('starstone:face_mask_low') == 13 || query.block_state('starstone:face_mask_low') == 14 || query.block_state('starstone:face_mask_low') == 15) || (query.block_state('starstone:arms_low') == 4 || query.block_state('starstone:arms_low') == 5 || query.block_state('starstone:arms_low') == 6 || query.block_state('starstone:arms_low') == 7 || query.block_state('starstone:arms_low') == 12 || query.block_state('starstone:arms_low') == 13 || query.block_state('starstone:arms_low') == 14 || query.block_state('starstone:arms_low') == 15))",
+          "arm_west_south": "(query.block_state('starstone:face_mask_high') == 2 || query.block_state('starstone:face_mask_high') == 3) && ((query.block_state('starstone:face_mask_low') == 4 || query.block_state('starstone:face_mask_low') == 5 || query.block_state('starstone:face_mask_low') == 6 || query.block_state('starstone:face_mask_low') == 7 || query.block_state('starstone:face_mask_low') == 12 || query.block_state('starstone:face_mask_low') == 13 || query.block_state('starstone:face_mask_low') == 14 || query.block_state('starstone:face_mask_low') == 15) || (query.block_state('starstone:arms_high') == 4 || query.block_state('starstone:arms_high') == 5 || query.block_state('starstone:arms_high') == 6 || query.block_state('starstone:arms_high') == 7 || query.block_state('starstone:arms_high') == 12 || query.block_state('starstone:arms_high') == 13 || query.block_state('starstone:arms_high') == 14 || query.block_state('starstone:arms_high') == 15))"
+        }
+      },
+      "minecraft:material_instances": {
+        "*": {
+          "texture": "starstone:cable_arm_off",
+          "render_method": "alpha_test",
+          "face_dimming": false,
+          "ambient_occlusion": false
+        },
+        "hub": {
+          "texture": "starstone:cable_hub_off",
+          "render_method": "alpha_test",
+          "face_dimming": false,
+          "ambient_occlusion": false
+        }
+      },
+      "starstone:inner_corner": {},
+      "minecraft:movable": {
+        "movement_type": "immovable"
+      },
+      "minecraft:light_emission": 0
+    },
+    "permutations": [
+      {
+        "condition": "query.block_state('starstone:powered') == true",
+        "components": {
+          "minecraft:material_instances": {
+            "*": {
+              "texture": "starstone:cable_arm_on",
+              "render_method": "alpha_test",
+              "face_dimming": false,
+              "ambient_occlusion": false
+            },
+            "hub": {
+              "texture": "starstone:cable_hub_on",
+              "render_method": "alpha_test",
+              "face_dimming": false,
+              "ambient_occlusion": false
+            }
+          },
+          "minecraft:light_emission": 1
+        }
+      }
+    ]
+  }
+}

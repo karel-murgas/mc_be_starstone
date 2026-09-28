@@ -1,0 +1,17 @@
+{
+  "format_version": "1.20.10",
+  "minecraft:recipe_shaped": {
+    "description": { "identifier": "starstone:redstone_output_recipe" },
+    "tags": ["crafting_table"],
+    "unlock": [{ "item": "starstone:crystal" }],
+    "pattern": [" C ","DXR", " S "],
+    "key": {
+      "S": { "item": "starstone:crystal" },
+      "D": { "item": "starstone:dust" },
+      "C": { "item": "minecraft:copper_ingot" },
+      "R": { "item": "minecraft:redstone" },
+      "X": { "item": "minecraft:repeater" }
+    },
+    "result": { "item": "starstone:redstone_output", "count": 1 }
+  }
+}

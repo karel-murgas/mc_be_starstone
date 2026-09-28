@@ -1,0 +1,16 @@
+{
+  "format_version": "1.20.30",
+  "minecraft:ore_feature": {
+    "description": { "identifier": "starstone:ore_feature" },
+    "count": 8,
+    "replace_rules": [
+      {
+        "places_block": "starstone:ore",
+        "may_replace": [
+          { "name": "minecraft:stone" },
+          { "name": "minecraft:deepslate" }
+        ]
+      }
+    ]
+  }
+}

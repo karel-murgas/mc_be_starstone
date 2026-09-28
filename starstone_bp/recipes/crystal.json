@@ -1,0 +1,9 @@
+{
+  "format_version": "1.20.10",
+  "minecraft:recipe_furnace": {
+    "description": { "identifier": "starstone:crystal_recipe" },
+    "tags": ["furnace"],
+    "input": "starstone:compressed_dust",
+    "output": "starstone:crystal"
+  }
+}

@@ -1,0 +1,40 @@
+{
+    "format_version": "1.21.120",
+    "minecraft:block": {
+        "description": {
+            "identifier": "starstone:ore",
+            "menu_category": {
+                "category": "nature"
+            }
+        },
+        "components": {
+            "minecraft:map_color": [
+                46,
+                55,
+                80
+            ],
+            "minecraft:destructible_by_mining": {
+                "seconds_to_destroy": 1.5,
+                "item_specific_speeds": [
+                    { "item": "minecraft:wooden_pickaxe", "destroy_speed": 1.5 },
+                    { "item": "minecraft:stone_pickaxe", "destroy_speed": 1.0 },
+                    { "item": "minecraft:iron_pickaxe", "destroy_speed": 0.75 },
+                    { "item": "minecraft:golden_pickaxe", "destroy_speed": 0.5 },
+                    { "item": "minecraft:diamond_pickaxe", "destroy_speed": 0.6 },
+                    { "item": "minecraft:netherite_pickaxe", "destroy_speed": 0.5 }
+                ]
+            },
+            "minecraft:loot": "loot_tables/blocks/ore.json",
+            "minecraft:geometry": "minecraft:geometry.full_block",
+            "minecraft:material_instances": {
+                "*": {
+                    "texture": "starstone:ore",
+                    "render_method": "opaque",
+                    "face_dimming": false,
+                    "ambient_occlusion": false
+                }
+            },
+            "minecraft:light_emission": 3
+        }
+    }
+}

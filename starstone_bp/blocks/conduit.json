@@ -1,0 +1,188 @@
+{
+    "format_version": "1.21.120",
+    "minecraft:block": {
+        "description": {
+            "identifier": "starstone:conduit",
+            "menu_category": {
+                "category": "items"
+            },
+            "states": {
+                "starstone:axis": [
+                    "x",
+                    "y",
+                    "z"
+                ],
+                "starstone:powered": [
+                    false,
+                    true
+                ]
+            }
+        },
+        "components": {
+            "starstone:conduit": {},
+            "minecraft:map_color": [
+                30,
+                40,
+                60
+            ],
+            "minecraft:destructible_by_mining": {
+                "seconds_to_destroy": 0.5
+            },
+            "minecraft:loot": "loot_tables/blocks/conduit.json",
+            "minecraft:geometry": {
+                "identifier": "geometry.starstone_conduit"
+            },
+            "minecraft:material_instances": {
+                "*": {
+                    "texture": "starstone:casing",
+                    "face_dimming": false,
+                    "ambient_occlusion": false
+                }
+            },
+            "minecraft:movable": {
+                "movement_type": "immovable"
+            },
+            "minecraft:light_emission": 0
+        },
+        "permutations": [
+            {
+                "condition": "query.block_state('starstone:axis') == 'x' && query.block_state('starstone:powered') == false",
+                "components": {
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "starstone:casing",
+                            "face_dimming": false,
+                            "ambient_occlusion": false
+                        },
+                        "east": {
+                            "texture": "starstone:conduit_end_off",
+                            "face_dimming": false,
+                            "ambient_occlusion": false
+                        },
+                        "west": {
+                            "texture": "starstone:conduit_end_off",
+                            "face_dimming": false,
+                            "ambient_occlusion": false
+                        }
+                    },
+                    "minecraft:light_emission": 0
+                }
+            },
+            {
+                "condition": "query.block_state('starstone:axis') == 'x' && query.block_state('starstone:powered') == true",
+                "components": {
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "starstone:casing",
+                            "face_dimming": false,
+                            "ambient_occlusion": false
+                        },
+                        "east": {
+                            "texture": "starstone:conduit_end",
+                            "face_dimming": false,
+                            "ambient_occlusion": false
+                        },
+                        "west": {
+                            "texture": "starstone:conduit_end",
+                            "face_dimming": false,
+                            "ambient_occlusion": false
+                        }
+                    },
+                    "minecraft:light_emission": 1
+                }
+            },
+            {
+                "condition": "query.block_state('starstone:axis') == 'y' && query.block_state('starstone:powered') == false",
+                "components": {
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "starstone:casing",
+                            "face_dimming": false,
+                            "ambient_occlusion": false
+                        },
+                        "up": {
+                            "texture": "starstone:conduit_end_off",
+                            "face_dimming": false,
+                            "ambient_occlusion": false
+                        },
+                        "down": {
+                            "texture": "starstone:conduit_end_off",
+                            "face_dimming": false,
+                            "ambient_occlusion": false
+                        }
+                    },
+                    "minecraft:light_emission": 0
+                }
+            },
+            {
+                "condition": "query.block_state('starstone:axis') == 'y' && query.block_state('starstone:powered') == true",
+                "components": {
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "starstone:casing",
+                            "face_dimming": false,
+                            "ambient_occlusion": false
+                        },
+                        "up": {
+                            "texture": "starstone:conduit_end",
+                            "face_dimming": false,
+                            "ambient_occlusion": false
+                        },
+                        "down": {
+                            "texture": "starstone:conduit_end",
+                            "face_dimming": false,
+                            "ambient_occlusion": false
+                        }
+                    },
+                    "minecraft:light_emission": 1
+                }
+            },
+            {
+                "condition": "query.block_state('starstone:axis') == 'z' && query.block_state('starstone:powered') == false",
+                "components": {
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "starstone:casing",
+                            "face_dimming": false,
+                            "ambient_occlusion": false
+                        },
+                        "north": {
+                            "texture": "starstone:conduit_end_off",
+                            "face_dimming": false,
+                            "ambient_occlusion": false
+                        },
+                        "south": {
+                            "texture": "starstone:conduit_end_off",
+                            "face_dimming": false,
+                            "ambient_occlusion": false
+                        }
+                    },
+                    "minecraft:light_emission": 0
+                }
+            },
+            {
+                "condition": "query.block_state('starstone:axis') == 'z' && query.block_state('starstone:powered') == true",
+                "components": {
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "starstone:casing",
+                            "face_dimming": false,
+                            "ambient_occlusion": false
+                        },
+                        "north": {
+                            "texture": "starstone:conduit_end",
+                            "face_dimming": false,
+                            "ambient_occlusion": false
+                        },
+                        "south": {
+                            "texture": "starstone:conduit_end",
+                            "face_dimming": false,
+                            "ambient_occlusion": false
+                        }
+                    },
+                    "minecraft:light_emission": 1
+                }
+            }
+        ]
+    }
+}

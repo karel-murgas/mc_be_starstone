@@ -1,0 +1,39 @@
+{
+    "resource_pack_name": "starstone_rp",
+    "texture_name": "atlas.items",
+    "texture_data": {
+        "starstone_cable": {
+            "textures": "textures/items/starstone_cable"
+        },
+        "starstone_inner_corner": {
+            "textures": "textures/items/starstone_inner_corner"
+        },
+        "starstone_generator": {
+            "textures": "textures/items/starstone_generator"
+        },
+        "starstone_bridge": {
+            "textures": "textures/items/starstone_bridge"
+        },
+        "starstone_conduit": {
+            "textures": "textures/items/starstone_conduit"
+        },
+        "starstone_redstone_input": {
+            "textures": "textures/items/starstone_redstone_input"
+        },
+        "starstone_redstone_output": {
+            "textures": "textures/items/starstone_redstone_output"
+        },
+        "starstone_dust": {
+            "textures": "textures/items/starstone_dust"
+        },
+        "starstone_crystal": {
+            "textures": "textures/items/starstone_crystal"
+        },
+        "starstone_compressed_dust": {
+            "textures": "textures/items/starstone_compressed_dust"
+        },
+        "starstone_ore": {
+            "textures": "textures/items/starstone_ore"
+        }
+    }
+}

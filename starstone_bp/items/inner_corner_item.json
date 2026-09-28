@@ -1,0 +1,21 @@
+{
+  "format_version": "1.21.120",
+  "minecraft:item": {
+    "description": {
+      "identifier": "starstone:inner_corner_item",
+      "menu_category": {
+        "category": "items"
+      }
+    },
+    "components": {
+      "minecraft:max_stack_size": 64,
+      "minecraft:icon": "starstone_inner_corner",
+      "minecraft:block_placer": {
+        "block": "starstone:inner_corner"
+      },
+      "minecraft:display_name": {
+        "value": "item.starstone:inner_corner_item"
+      }
+    }
+  }
+}

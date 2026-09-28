@@ -1,0 +1,63 @@
+{
+    "resource_pack_name": "starstone_rp",
+    "texture_name": "atlas.terrain",
+    "texture_data": {
+        "starstone:cable_off": {
+            "textures": "textures/blocks/starstone_cable_off"
+        },
+        "starstone:cable_on": {
+            "textures": "textures/blocks/starstone_cable_on"
+        },
+        "starstone:cable_hub_off": {
+            "textures": "textures/blocks/starstone_cable_hub_off"
+        },
+        "starstone:cable_hub_on": {
+            "textures": "textures/blocks/starstone_cable_hub_on"
+        },
+        "starstone:generator": {
+            "textures": "textures/blocks/starstone_generator"
+        },
+        "starstone:generator_off": {
+            "textures": "textures/blocks/starstone_generator_off"
+        },
+        "starstone:lamp_off": {
+            "textures": "textures/blocks/starstone_lamp_off"
+        },
+        "starstone:lamp_on": {
+            "textures": "textures/blocks/starstone_lamp_on"
+        },
+        "starstone:casing": {
+            "textures": "textures/blocks/starstone_casing"
+        },
+        "starstone:conduit_end": {
+            "textures": "textures/blocks/starstone_conduit_end"
+        },
+        "starstone:conduit_end_off": {
+            "textures": "textures/blocks/starstone_conduit_end_off"
+        },
+        "starstone:redstone_input": {
+            "textures": "textures/blocks/starstone_redstone_input"
+        },
+        "starstone:redstone_output": {
+            "textures": "textures/blocks/starstone_redstone_output"
+        },
+        "starstone:bridge": {
+            "textures": "textures/blocks/starstone_bridge"
+        },
+        "starstone:ore": {
+            "textures": "textures/blocks/starstone_ore"
+        },
+        "starstone:cable_arm_off": {
+            "textures": "textures/blocks/starstone_cable_arm_off"
+        },
+        "starstone:cable_arm_on": {
+            "textures": "textures/blocks/starstone_cable_arm_on"
+        },
+        "starstone:redstone_arm_off": {
+            "textures": "textures/blocks/starstone_redstone_arm_off"
+        },
+        "starstone:redstone_arm_on": {
+            "textures": "textures/blocks/starstone_redstone_arm_on"
+        }
+    }
+}

@@ -1,0 +1,15 @@
+{
+    "format_version": "1.0.0",
+    "pools": [
+        {
+            "name": "main",
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "starstone:bridge"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,11 @@
+{
+    "format_version": "1.21.120",
+    "starstone:cable": {},
+    "starstone:bridge": {},
+    "starstone:generator": {},
+    "starstone:lamp": {},
+    "starstone:conduit": {},
+    "starstone:redstone_input": {},
+    "starstone:redstone_output": {},
+    "starstone:ore": {}
+}
