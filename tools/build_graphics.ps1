@@ -13,9 +13,8 @@ $workspace = (Resolve-Path (Join-Path $PSScriptRoot "../../..")).Path  # workspa
 $resourcePack = Join-Path $workspace "mods/starstone/starstone_rp"
 $itemOutput = Join-Path $resourcePack "textures/items"
 $blockOutput = Join-Path $resourcePack "textures/blocks"
-$uiOutput = Join-Path $resourcePack "textures/ui"
 
-New-Item -ItemType Directory -Force $itemOutput, $blockOutput, $uiOutput | Out-Null
+New-Item -ItemType Directory -Force $itemOutput, $blockOutput | Out-Null
 
 function Export-AtlasCell {
     param(
@@ -82,9 +81,6 @@ try {
             -Columns 4 -Rows 2 -Size 32 -Destination (Join-Path $itemOutput $cell.Name)
     }
 
-    Export-AtlasCell -Atlas $icons -Column 3 -Row 1 -Columns 4 -Rows 2 -Size 64 `
-        -Destination (Join-Path $uiOutput "starstone_emblem.png")
-
     $surfaceIconCells = @(
         @{ Name = "starstone_ore.png"; Column = 0; Row = 0 },
         @{ Name = "starstone_generator.png"; Column = 1; Row = 0 },
@@ -99,9 +95,6 @@ try {
         Export-AtlasCell -Atlas $surfaceIcons -Column $cell.Column -Row $cell.Row `
             -Columns 4 -Rows 2 -Size 32 -Destination (Join-Path $itemOutput $cell.Name)
     }
-
-    Export-AtlasCell -Atlas $surfaceIcons -Column 3 -Row 1 -Columns 4 -Rows 2 -Size 32 `
-        -Destination (Join-Path $uiOutput "starstone_intersection_reference.png")
 
     $blockCells = @(
         @{ Name = "starstone_cable_off.png"; Column = 0; Row = 0 },
