@@ -26,6 +26,7 @@
             },
             "minecraft:loot": "loot_tables/blocks/ore.json",
             "minecraft:geometry": "minecraft:geometry.full_block",
+            "minecraft:redstone_conductivity": { "redstone_conductor": true },
             "minecraft:material_instances": {
                 "*": {
                     "texture": "starstone:ore",

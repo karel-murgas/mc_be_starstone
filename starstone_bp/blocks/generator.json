@@ -24,6 +24,7 @@
             },
             "minecraft:loot": "loot_tables/blocks/generator.json",
             "minecraft:geometry": "minecraft:geometry.full_block",
+            "minecraft:redstone_conductivity": { "redstone_conductor": true },
             "minecraft:material_instances": {
                 "*": {
                     "texture": "starstone:generator_off",
