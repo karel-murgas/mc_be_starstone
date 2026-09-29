@@ -29,7 +29,7 @@ redstone input/output adapters.
 Lighting: ore always emits level 3. Active cables, conduits, generators and
 adapters emit level 1; inactive ones emit 0. A bridge emits 1 when either lane
 is powered, while its lane textures remain independent. Powered lamps emit 15.
-These starting values need a bright/dark in-game readability check.
+Art readability was accepted in game (2026-09-29).
 
 Implemented electrical blocks: cable, isolated bridge, conduit, generator,
 lamp, redstone input and redstone output. Survival content includes Ore, Dust,
@@ -57,7 +57,7 @@ support or changing an indexed block by command is caught by periodic
 maintenance. Validation visits at most 16 indexed cursor entries every 100 ticks;
 related topology repairs run as yielded jobs. It never scans a surrounding
 volume periodically. Unknown command-created circuits require nearby rebuilding.
-Actual piston behavior remains an in-game acceptance item.
+Piston and explosion behavior were accepted in game (2026-09-29).
 
 ## Recovery and durable chunk graph
 
@@ -127,7 +127,8 @@ artwork's arrow is a conversion emblem, not a placement direction.
 | Replacement blocks | Stone and deepslate |
 | Air-exposure discard chance | None |
 
-These are tuning values; real ore counts/distribution and tool behavior remain
+Mining and ore distribution were accepted in game (2026-09-29); Silk Touch and Fortune
+drops are not yet tested. These are tuning values; exact ore counts and tool behavior remain
 unmeasured. Ore veins may spread around their placement origin. Existing chunks
 are not retroactively regenerated. [SURVIVAL.md](docs/SURVIVAL.md)
 records the loot and generation schemas and references.
@@ -195,13 +196,14 @@ splitting loops, multiple sources, support/explosion/piston changes, reload,
 unloaded-middle continuity, adapter support transitions, ore/tools/generation,
 installed recipes, stress budgets, and bright/dark art readability.
 
-| Acceptance evidence | Status |
-|---|---|
-| Pack load / Content Log / declared version accepted | User loaded packs; Content Log/version details not recorded |
-| Physical six-face placement and final art readability | User found cable/bridge/adapter defects; revised art and corners await retest |
-| Piston policy and explosion behavior in-game | Not run |
-| Actual unloaded-middle or alternate save/unload/load sequence | Not run |
-| Strong redstone output and support input in-game | Not run |
-| Mining, Silk Touch, Fortune and sampled new-chunk ore distribution | User saw ore generation and no drops; scripted drops and mining-time fix await retest |
-| 1k/5k/10k real ticks, queue observations and watchdog logs | Not run |
+Accepted in game (2026-09-29): six-face placement and final art readability, piston
+policy and explosions, strong redstone output and support input, mining and new-chunk
+ore distribution. Pack load was accepted; Content Log/version details are not needed.
 
+Still open:
+
+| Check | Status |
+|---|---|
+| Silk Touch and Fortune ore drops | Not tested (plain mining works) |
+| Actual unloaded-middle or alternate save/unload/load sequence (TEST-WORLD gate 7.6) | Not run |
+| 1k/5k/10k real ticks, queue observations and watchdog logs | Not run |
